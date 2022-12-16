@@ -11,7 +11,7 @@ public interface UserService{
 
     List<User> findAllUsers();
 
-    User findUserById(Long id);
+    User findUserById(Long id, List<Book>books);
 
     String removeUserByName(String name);
 
@@ -19,7 +19,7 @@ public interface UserService{
 
     void groupUsersByGender();
 
-    String buyBooks(String name, List<Book>books);
+    StringBuilder buyBooks(String name, List<Book>books, List<String>user);
 
 
 }

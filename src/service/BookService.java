@@ -6,17 +6,17 @@ import java.util.List;
 
 public interface BookService {
 
-    List <Book> createBooks(List<Book>books);
+    List <Book>  createBooks(List<Book>books);
 
-    List<Book> getAllBooks();
+    List<Book> getAllBooks(List<Book>books);
 
-    List<Book> getBooksByGenre(String genre);
+    String getBooksByGenre(String genre, List<Book>books);
 
     Book removeBookById(Long id);
 
-    List<Book> sortBooksByPriceInDescendingOrder();
+    List<Book> sortBooksByPriceInDescendingOrder(List<Book>books);
 
-    List<Book> filterBooksByPublishedYear();// Konsolgo akyrky 10 jilda chygarylgan kitepter chyksyn
+    List<Book> filterBooksByPublishedYear(List<Book>books);// Konsolgo akyrky 10 jilda chygarylgan kitepter chyksyn
 
     List<Book> getBookByInitialLetter();
 
