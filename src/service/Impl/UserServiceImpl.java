@@ -54,8 +54,6 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public StringBuilder buyBooks(String name, List<Book> books, List<String> user) {
-       //(List<Products> product, List<String> products,String name,int som) {
-            Scanner scanner = new Scanner(System.in);
 
              BigDecimal d = new BigDecimal(10);
              int s = d.intValue();
